@@ -256,3 +256,4 @@ async def dr( ctx, member:discord.Member):
 
 # Connect
 token = os.environ.get('BOT_TOKEN')
+bot.run(str(token))
