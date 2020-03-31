@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import os
 
 prefix= "+"
 
@@ -254,6 +255,4 @@ async def dr( ctx, member:discord.Member):
     await ctx.send(f'**Ув., {mendez_role.mention}, сегодня празднует свой День Рождения наш любимый {member.mention}. Давайте все зафлудим ему личку и поздравим с Днём Рождения :)** ' )
 
 # Connect
-token = open( 'token.txt', 'r' ).readline()
-
-Bot.run ( token )
+token = os.environ.get('BOT_TOKEN')
