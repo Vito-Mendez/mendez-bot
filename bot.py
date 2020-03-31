@@ -255,4 +255,5 @@ async def dr( ctx, member:discord.Member):
     await ctx.send(f'**Ув., {mendez_role.mention}, сегодня празднует свой День Рождения наш любимый {member.mention}. Давайте все зафлудим ему личку и поздравим с Днём Рождения :)** ' )
 
 # Connect
-Bot.run( BOT_TOKEN )
+token = open('token.txt', 'r').readline()
+Bot.run( token )
