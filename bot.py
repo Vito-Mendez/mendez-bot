@@ -313,3 +313,5 @@ async def sms_error( ctx, error ):
 		await ctx.send(f' ```+sms [Пользователь] [Текст]``` ')
 
 token =os.environ.get('BOT_TOKEN')
+
+bot.run(str(token))
